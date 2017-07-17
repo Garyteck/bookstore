@@ -106,5 +106,6 @@ app.delete('/api/books/:_id', (req, res) => {
 	});
 });
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+app.listen(port);
 console.log('Running on port 3000...');
